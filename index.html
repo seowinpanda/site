@@ -28,6 +28,16 @@
       max-width: 1200px;
       margin: 0 auto;
     }
+    .card {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    
   </style>
 </head>
 <body>
@@ -48,31 +58,37 @@
         <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="SEO Optimization" />
         <h3>SEO Optimization</h3>
         <p>Rank higher and stay visible with powerful SEO strategies.</p>
+        <a href="#contact" class="button" style="display:inline-block; margin-top:0.5rem; background:#1a202c; color:#fff; padding:0.4rem 0.8rem; border-radius:20px; text-decoration:none; font-size:0.85rem; ">Request a Quote</a>
       </div>
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Social Media Management" />
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Social Media Management">
         <h3>Social Media Management</h3>
         <p>Build your brand and grow followers with creative, consistent content.</p>
+        <a href="#contact" class="button" style="display:inline-block; margin-top:0.5rem; background:#1a202c; color:#fff; padding:0.4rem 0.8rem; border-radius:20px; text-decoration:none; font-size:0.85rem;">Request a Quote</a>
       </div>
       <div class="card" data-aos="fade-up">
         <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Conversion Rate Optimization" />
         <h3>Conversion Rate Optimization</h3>
         <p>Turn more visitors into customers with UX and A/B testing improvements.</p>
+        <a href="#contact" class="button" style="display:inline-block; margin-top:0.5rem; background:#1a202c; color:#fff; padding:0.4rem 0.8rem; border-radius:20px; text-decoration:none; font-size:0.85rem;">Request a Quote</a>
       </div>
       <div class="card" data-aos="fade-up">
         <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Google Ads" />
         <h3>Google Ads</h3>
         <p>Drive traffic and conversions with precision-targeted ad campaigns.</p>
+        <a href="#contact" class="button" style="display:inline-block; margin-top:0.5rem; background:#1a202c; color:#fff; padding:0.4rem 0.8rem; border-radius:20px; text-decoration:none; font-size:0.85rem;">Request a Quote</a>
       </div>
       <div class="card" data-aos="fade-up">
         <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Performance Marketing" />
         <h3>Performance Marketing</h3>
         <p>Scale efficiently with ROI-focused campaigns and analytics.</p>
+        <a href="#contact" class="button" style="display:inline-block; margin-top:0.5rem; background:#1a202c; color:#fff; padding:0.4rem 0.8rem; border-radius:20px; text-decoration:none; font-size:0.85rem;">Request a Quote</a>
       </div>
       <div class="card" data-aos="fade-up">
         <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Content Strategy" />
         <h3>Content Strategy</h3>
         <p>Create meaningful, search-optimized content that connects with your audience and drives results.</p>
+        <a href="#contact" class="button" style="display:inline-block; margin-top:0.5rem; background:#1a202c; color:#fff; padding:0.4rem 0.8rem; border-radius:20px; text-decoration:none; font-size:0.85rem;">Request a Quote</a>
       </div>
     </div>
   </section>
@@ -96,21 +112,29 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-  <h2 data-aos="fade-up">Contact Us</h2>
-  <div class="contact-details" data-aos="fade-up" style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
-    <p>📧 <strong>Email:</strong> <a href="mailto:info@seowinpanda.com">info@seowinpanda.com</a></p>
-    <p>📞 <strong>Phone:</strong> <a href="tel:7029917101">702-991-7101</a></p>
-    <p>📍 <strong>Address:</strong> 732 S 6TH ST Unit 4994, Las Vegas, NV, 89101</p>
-  </div>
-  <form data-aos="fade-up">
-      <div class="form-row">
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
+  <section class="contact" id="contact" style="background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec); padding: 4rem 5vw; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+  <h2 data-aos="fade-up" style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem; color: #1a202c;">Contact Us</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; align-items: flex-start;">
+    <form data-aos="fade-up" style="flex: 1; min-width: 300px; max-width: 600px; display: grid; gap: 1.2rem; background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);">
+      <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <input type="text" placeholder="Company Name" required style="flex: 1; padding: 0.75rem; border-radius: 10px; border: 1px solid #ccc;" />
+        <input type="url" placeholder="Website (optional)" style="flex: 1; padding: 0.75rem; border-radius: 10px; border: 1px solid #ccc;" />
       </div>
-      <textarea placeholder="Message" required></textarea>
-      <button type="submit">Send Message</button>
+      <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <input type="text" placeholder="Name" required style="flex: 1; padding: 0.75rem; border-radius: 10px; border: 1px solid #ccc;" />
+        <input type="email" placeholder="Email" required style="flex: 1; padding: 0.75rem; border-radius: 10px; border: 1px solid #ccc;" />
+      </div>
+      <input type="tel" placeholder="Phone Number" required style="width: 100%; padding: 0.75rem; border-radius: 10px; border: 1px solid #ccc;" />
+      <textarea placeholder="Message" required style="width: 100%; height: 150px; padding: 0.75rem; border-radius: 10px; border: 1px solid #ccc;"></textarea>
+      <button type="submit" style="background-color: #1a202c; color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 25px; font-size: 1rem; cursor: pointer; transition: background 0.3s ease;">Send Message</button>
     </form>
+    <div class="contact-details" data-aos="fade-up" style="flex: 1; min-width: 300px; max-width: 400px; font-size: 1.1rem; background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);">
+      <p>📧 <strong>Email:</strong> <a href="mailto:info@seowinpanda.com">info@seowinpanda.com</a></p>
+      <p>📞 <strong>Phone:</strong> <a href="tel:7029917101">702-991-7101</a></p>
+      <p>📍 <strong>Address:</strong> 732 S 6TH ST Unit 4994, Las Vegas, NV, 89101</p>
+    </div>
+  </div>
+  
   </section>
 
   <!-- Footer -->
